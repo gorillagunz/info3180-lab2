@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+<style>
+.bum{
+    position: absolute;
+    left:600px;
+    width:800px;
+}
+.bam{
+    position :absolute;
+    
+}
+</style>
+<h1 class="page-header">Profile</h1>
+<br>
+<div class="bam">
+<img src="{{ url_for('static', filename = 'Masterobiwan.jpg') }}">
+</div>
+<div class="bum">
+<h3>Obi-Wan Kenobi</h3>
+<p>Todays date {{now}}</p>
+<hr>
+<p><strong>Username:</strong> Obi-1</p>
+<p><strong>Age:</strong> 57</p>
+<p><strong>Id Number:</strong> 620099999</p>
+<p><strong>Gender:</strong> Male</p>
+</div>
+{% endblock %}
+
